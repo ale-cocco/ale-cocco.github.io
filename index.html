@@ -1,45 +1,230 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página em Construção</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Josefin+Sans&family=Fuzzy+Bubbles&family=Bubblegum+San&family=Comfortaa:wght@700&display=swap">
     <style>
+        html, body, div, span, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        abbr, address, cite, code,
+        del, dfn, em, img, ins, kbd, q, samp,
+        small, strong, sub, sup, var,
+        b, i,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+            background: transparent;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
+            background-color: rgb(134, 196, 132);
+        }
+
+        .espaço {
+            background-color: rgb(138, 169, 107);
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            height: 130px;
+        }
+
+        .espaço ul {
+            list-style: none;
             margin: 0;
             padding: 0;
             display: flex;
-            align-items: center;
+            flex-grow: 1;
+            justify-content: space-around;
+        }
+
+        .espaço a {
+            font-size: 22px;
+            font-family: agbalumo;
+            color: #384738;
+            text-decoration: none;
+        }
+
+        .espaço a:hover {
+            color: #002409;
+            text-decoration: underline;
+            zoom: 105%;
+        }
+        .banner {
+            display: flex;
             justify-content: center;
-            height: 100vh;
-            background-image: url('lucian-qxO2PBn7eKU-unsplash.jpg');
-            background-size: cover;
-            background-position: center;
-            color: black;
-            font-family: 'Arial', sans-serif;
         }
 
-        .conteudo {
-            text-align: center;
+        .listaprodutos {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
         }
 
-        .creditos {
+        .container div {
+            margin-top: 20px;
+        }
+        @media only screen and (max-width: 600px) {
+            .espaço ul {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .logo {
+                margin-left: -40px;
+            }
+            .banner {
+                flex-direction: column-reverse;
+            }
+            .listaprodutos {
+                flex-direction: column;
+            }
+            .listaprodutos div {
+                text-align: center;
+            }
+        }
+
+
+
+        .produto {
+            height: 200px;
+            align-items: center;
+        }
+
+
+        h3 {
+            font-size: 22px;
+            font-family: agbalumo;
+        }
+
+        p {
+            font-size: 22px;
+            font-family: Fuzzy Bubbles;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-family: agbalumo;
+            font-weight: 50;
+        }
+
+        h1 {
+            font-size: 90px;
             position: absolute;
-            bottom: 10px;
-            right: 10px;
-            font-size: 12px;
-            opacity: 0.7;
+            left: 700px;
+            top: 450px;
+            color: rgb(34, 66, 48);
         }
+
+        .container {
+            padding: 20px;
+        }
+
     </style>
+
 </head>
 <body>
-<div class="conteudo">
-    <h1>Em Construção</h1>
-    <div class="creditos">
+<div class="espaço">
+    <div>
+        <img src="logobubble.png" class="logo">
+    </div>
+    <ul>
+        <li class="menu1"><a href="#História"> Nossa História </a></li>
+        <li class="menu2"><a href="#Tea"> Bubble Tea </a></li>
+        <li class="menu3"><a href="#Produto"> Produtos </a></li>
+        <li class="menu4"><a href="#Novidades"> Novidades </a></li>
+    </ul>
+</div>
+<div class="container">
+    <div class="banner">
+        <img src="copode.png" class="copo">
+        <img src="slogan.png"class="slogan">
+    </div>
+
+    <div id="História">
+        <b> <h2> NOSSA HISTÓRIA </h2> </b>
         <p>
-            Foto de <a href="https://unsplash.com/pt-br/@luciandachman?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Lucian</a> na <a href="https://unsplash.com/pt-br/fotografias/pico-da-montanha-coberto-de-neve-qxO2PBn7eKU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            Somos uma equipe de estudantes que administram uma empresa de Bulbbe Tea. Nossa esquipe é composta por três pessoas, a Ana Marques, a Ana Cocco e a Heloíza Santin.
+            A empresa Bubble Magic surgiu nós anos 2000, criada pela família de uma de nossas administradoras, a Heloíza,
+            e com o tempo e as inovações tecnológicas a família dela resolveu passar o legado da empresa para frente e assim nos três resolvemos aceitar.
+            Agora  o nosso objetivo é cuidar da Bubble Magic e fazer com que ela se torne uma das lojas de Bubble Tea mais famosas do Brasil.
+        </p>
+    </div>
+
+    <div id="Tea">
+        <h2> BUBBLE TEA </h2>
+        <p>
+            O Bubble Tea pode ter muitos sabores e combinações, mas, de modo geral, ele consiste em uma mistura de chá,
+            suco ou xarope de frutas e leite, além de bolinhas de tapioca ou as bolinhas poppings que são mais comuns no Brasil.
+            Essa bebida normalmente é servida em um copo de plástico com um canudo grosso para conseguir pegara as bolinhas e normalmente é servido gelado
+        </p>
+    </div>
+
+    <div id="Produto">
+        <h2> PRODUTOS </h2>
+
+        <div class="listaprodutos">
+            <div>
+                <img src="verde.png" class="produto" id="p1">
+                <p id="p1-">
+                    Limon green
+                </p>
+            </div>
+            <div>
+                <img src="roxo.png"  class="produto" id="p2">
+                <p id="p2-" >
+                    Dragon Fruit
+                </p>
+            </div>
+            <div>
+                <img src="azul.png" class="produto" id="p3">
+                <p id="p3-" >
+                    Blue Ice
+                </p>
+            </div>
+            <div>
+                <img src="Chocolatee.png" class="produto" id="p4">
+                <p id="p4-" >
+                    Chocolate
+                </p>
+            </div>
+            <div>
+                <img src="frutasver.png" class="produto" id="p5">
+                <p id="p5-" >
+                    Frutas Vermelhas
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="Novidades">
+        <h2> NOVIDADES</h2>
+        <p>
+            novos produtos em breve
         </p>
     </div>
 </div>
+<div class="mapa">
+    <p> </p>
+
+</div>
+
 </body>
+
+
 </html>
+
